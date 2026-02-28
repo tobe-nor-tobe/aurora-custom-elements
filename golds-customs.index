@@ -5,7 +5,7 @@
 
     <update version="1.0.0">
       <file name="custom.index"
-            url="https://raw.githubusercontent.com/tobe-nor-tobe/aurora-custom-elements/refs/heads/main/golds-customs.index"/>
+            url="https://raw.githubusercontent.com/tobe-nor-tobe/aurora-custom-elements/main/golds-customs.index"/>
     </update>
 
   </info>
