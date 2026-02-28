@@ -1,0 +1,171 @@
+<elements>
+  <info>
+    <name>Harengon</name>
+    <description>Harengon player race</description>
+    <author>Custom</author>
+    <update version="1.0.0">
+      <file name="race-harengon.xml" url="YOUR_HOSTED_FILE_URL_HERE"/>
+    </update>
+  </info>
+
+  <!-- RACE -->
+  <element name="Harengon" type="Race" source="Custom" id="ID_CUSTOM_RACE_HARENGON">
+    <description>
+      <p class="flavor">
+        Harengons originated in the Feywild, where they spoke Sylvan and embodied the spirit of freedom and travel. In time, these rabbitfolk hopped into other worlds, bringing the fey realm's exuberance with them and learning new languages as they went.
+      </p>
+      <p>
+        Harengons are bipedal, with the characteristic long feet of the rabbits they resemble and fur in a variety of colors. They share the keen senses and powerful legs of leporine creatures and are full of energy, like a wound-up spring. Harengons are blessed with a little fey luck, and they often find themselves a few fortunate feet away from dangers during adventures.
+      </p>
+
+      <h4>HARENGON TRAITS</h4>
+
+      <p class="indent">
+        <strong><em>Ability Score Increase.</em></strong>
+        Increase one ability score by 2 and a different ability score by 1, or increase three different ability scores by 1.
+      </p>
+
+      <p class="indent">
+        <strong><em>Languages.</em></strong>
+        You can speak, read, and write Common and one other language of your choice.
+      </p>
+
+      <p class="indent">
+        <strong><em>Creature Type.</em></strong>
+        You are a Humanoid.
+      </p>
+
+      <p class="indent">
+        <strong><em>Life Span.</em></strong>
+        Harengons have a life span of about a century.
+      </p>
+
+      <p class="indent">
+        <strong><em>Size.</em></strong>
+        You are Medium or Small. You choose the size when you select this race.
+      </p>
+
+      <p class="indent">
+        <strong><em>Speed.</em></strong>
+        Your walking speed is 30 feet.
+      </p>
+
+      <p class="indent">
+        <strong><em>Hare-Trigger.</em></strong>
+        You can add your proficiency bonus to your initiative rolls.
+      </p>
+
+      <p class="indent">
+        <strong><em>Leporine Senses.</em></strong>
+        You have proficiency in the Perception skill.
+      </p>
+
+      <p class="indent">
+        <strong><em>Lucky Footwork.</em></strong>
+        When you fail a Dexterity saving throw, you can use your reaction to roll a d4 and add it to the save, potentially turning the failure into a success. You can't use this reaction if you're prone or your speed is 0.
+      </p>
+
+      <p class="indent">
+        <strong><em>Rabbit Hop.</em></strong>
+        As a bonus action, you can jump a number of feet equal to five times your proficiency bonus, without provoking opportunity attacks. You can use this trait only if your speed is greater than 0. You can use it a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.
+      </p>
+    </description>
+
+    <sheet display="false"/>
+
+    <rules>
+      <!-- Ability Score Increase (choice system like modern races) -->
+      <select type="Racial Trait" name="Ability Score Increase (Harengon)" supports="Harengon Ability Score Increase" number="1"/>
+
+      <!-- Speed -->
+      <stat name="innate speed" value="30" bonus="base"/>
+
+      <!-- Size choice -->
+      <select type="Size" name="Size (Harengon)" supports="Medium||Small" number="1"/>
+
+      <!-- Language -->
+      <grant type="Language" id="ID_LANGUAGE_COMMON"/>
+      <select type="Language" name="Language (Harengon)" supports="Standard||Exotic" number="1"/>
+
+      <!-- Skill -->
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION"/>
+
+      <!-- Traits -->
+      <grant type="Racial Trait" id="ID_CUSTOM_RACIAL_TRAIT_HARE_TRIGGER"/>
+      <grant type="Racial Trait" id="ID_CUSTOM_RACIAL_TRAIT_LUCKY_FOOTWORK"/>
+      <grant type="Racial Trait" id="ID_CUSTOM_RACIAL_TRAIT_RABBIT_HOP"/>
+    </rules>
+  </element>
+
+
+  <!-- ABILITY SCORE OPTIONS -->
+
+  <element name="Ability Score Increase (Option A)" type="Racial Trait" source="Custom" id="ID_CUSTOM_HARENGON_ASI_OPTION_A">
+    <supports>Harengon Ability Score Increase</supports>
+    <description>
+      <p>Increase one ability score by 2 and increase a different ability score by 1.</p>
+    </description>
+    <rules>
+      <select type="Ability Score" name="+2 Ability" number="1" value="2"/>
+      <select type="Ability Score" name="+1 Ability" number="1" value="1"/>
+    </rules>
+  </element>
+
+  <element name="Ability Score Increase (Option B)" type="Racial Trait" source="Custom" id="ID_CUSTOM_HARENGON_ASI_OPTION_B">
+    <supports>Harengon Ability Score Increase</supports>
+    <description>
+      <p>Increase three different ability scores by 1.</p>
+    </description>
+    <rules>
+      <select type="Ability Score" name="+1 Ability (1)" number="1" value="1"/>
+      <select type="Ability Score" name="+1 Ability (2)" number="1" value="1"/>
+      <select type="Ability Score" name="+1 Ability (3)" number="1" value="1"/>
+    </rules>
+  </element>
+
+
+  <!-- HARE-TRIGGER -->
+
+  <element name="Hare-Trigger" type="Racial Trait" source="Custom" id="ID_CUSTOM_RACIAL_TRAIT_HARE_TRIGGER">
+    <description>
+      <p>You can add your proficiency bonus to your initiative rolls.</p>
+    </description>
+    <rules>
+      <stat name="initiative" value="proficiency"/>
+    </rules>
+  </element>
+
+
+  <!-- LUCKY FOOTWORK -->
+
+  <element name="Lucky Footwork" type="Racial Trait" source="Custom" id="ID_CUSTOM_RACIAL_TRAIT_LUCKY_FOOTWORK">
+    <description>
+      <p>
+        When you fail a Dexterity saving throw, you can use your reaction to roll a d4 and add it to the save, potentially turning the failure into a success. You can't use this reaction if you're prone or your speed is 0.
+      </p>
+    </description>
+    <sheet usage="Reaction">
+      <description>When you fail a Dexterity saving throw, roll 1d4 and add it to the result.</description>
+    </sheet>
+  </element>
+
+
+  <!-- RABBIT HOP -->
+
+  <element name="Rabbit Hop" type="Racial Trait" source="Custom" id="ID_CUSTOM_RACIAL_TRAIT_RABBIT_HOP">
+    <description>
+      <p>
+        As a bonus action, you can jump a number of feet equal to five times your proficiency bonus, without provoking opportunity attacks. You can use this trait only if your speed is greater than 0.
+      </p>
+      <p>
+        You can use it a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.
+      </p>
+    </description>
+    <sheet usage="{{proficiency}}/Long Rest">
+      <description>
+        Jump {{proficiency*5}} feet as a bonus action without provoking opportunity attacks.
+      </description>
+    </sheet>
+  </element>
+
+</elements>
