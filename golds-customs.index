@@ -1,0 +1,18 @@
+<index>
+  <info>
+    <name>Aurora Custom Content</name>
+    <author>Your Name</author>
+
+    <update version="1.0.0">
+      <file name="custom.index"
+            url="https://raw.githubusercontent.com/YOUR_USERNAME/aurora-custom-elements/main/custom.index"/>
+    </update>
+
+  </info>
+
+  <files>
+    <file name="Harengon"
+          url="https://raw.githubusercontent.com/tobe-nor-tobe/aurora-custom-elements/main/supplements/custom/races/race-harengon.xml"
+          version="1.0.0"/>
+  </files>
+</index>
