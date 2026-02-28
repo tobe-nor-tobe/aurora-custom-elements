@@ -3,7 +3,7 @@
     <name>Harengon</name>
     <description>Harengon player race</description>
     <author>Custom</author>
-    <update version="1.0.7">
+    <update version="1.0.8">
       <file name="race-harengon.xml" url="https://raw.githubusercontent.com/tobe-nor-tobe/aurora-custom-elements/refs/heads/main/supplements/custom/races/race-harengon.xml"/>
     </update>
   </info>
@@ -307,20 +307,26 @@
 
   <!-- RABBIT HOP -->
 
-  <element name="Rabbit Hop" type="Racial Trait" source="Custom" id="ID_CUSTOM_RACIAL_TRAIT_RABBIT_HOP">
-    <description>
-      <p>
-        As a bonus action, you can jump a number of feet equal to five times your proficiency bonus, without provoking opportunity attacks. You can use this trait only if your speed is greater than 0.
-      </p>
-      <p>
-        You can use it a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.
-      </p>
-    </description>
-    <sheet usage="{{proficiency}}/Long Rest">
-      <description>
-        Jump {{proficiency * 5}} feet as a bonus action without provoking opportunity attacks.
-      </description>
-    </sheet>
-  </element>
+<element name="Rabbit Hop"
+         type="Racial Trait"
+         source="Custom"
+         id="ID_CUSTOM_RACIAL_TRAIT_RABBIT_HOP">
 
-</elements>
+  <description>
+    <p>
+      As a bonus action, you can jump a number of feet equal to five times your proficiency bonus.
+    </p>
+  </description>
+
+  <rules>
+    <!-- Create calculated stat -->
+    <stat name="rabbit hop distance" value="proficiency" multiplier="5" />
+  </rules>
+
+  <sheet usage="{{proficiency}}/Long Rest">
+    <description>
+      Jump {{rabbit hop distance}} feet as a bonus action without provoking opportunity attacks.
+    </description>
+  </sheet>
+
+</element>
