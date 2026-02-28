@@ -3,7 +3,7 @@
     <name>Harengon</name>
     <description>Harengon player race</description>
     <author>Custom</author>
-    <update version="1.0.1">
+    <update version="1.0.2">
       <file name="race-harengon.xml" url="https://raw.githubusercontent.com/tobe-nor-tobe/aurora-custom-elements/refs/heads/main/supplements/custom/races/race-harengon.xml"/>
     </update>
   </info>
@@ -182,7 +182,7 @@
     </description>
     <sheet usage="{{proficiency}}/Long Rest">
       <description>
-        Jump {{proficiency}*5} feet as a bonus action without provoking opportunity attacks.
+        Jump (({{proficiency}}*5}} feet as a bonus action without provoking opportunity attacks.
       </description>
     </sheet>
   </element>
