@@ -3,7 +3,7 @@
     <name>Harengon</name>
     <description>Harengon player race</description>
     <author>Custom</author>
-    <update version="1.0.9">
+    <update version="1.1.0">
       <file name="race-harengon.xml" url="https://raw.githubusercontent.com/tobe-nor-tobe/aurora-custom-elements/refs/heads/main/supplements/custom/races/race-harengon.xml"/>
     </update>
   </info>
@@ -318,10 +318,18 @@
     </p>
   </description>
 
-  <!-- ✅ CORRECT FORMULA SYNTAX -->
+  <rules>
+    <!-- Create calculated stat -->
+    <stat name="rabbit hop distance" value="proficiency"/>
+    <stat name="rabbit hop distance" value="proficiency"/>
+    <stat name="rabbit hop distance" value="proficiency"/>
+    <stat name="rabbit hop distance" value="proficiency"/>
+    <stat name="rabbit hop distance" value="proficiency"/>
+  </rules>
+
   <sheet usage="{{proficiency}}/Long Rest">
     <description>
-      Jump {{proficiency * 5}} feet as a bonus action without provoking opportunity attacks.
+      Jump {{rabbit hop distance}} feet as a bonus action without provoking opportunity attacks.
     </description>
   </sheet>
 </element>
