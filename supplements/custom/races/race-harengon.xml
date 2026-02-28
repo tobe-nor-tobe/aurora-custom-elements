@@ -3,7 +3,7 @@
     <name>Harengon</name>
     <description>Harengon player race</description>
     <author>Custom</author>
-    <update version="1.0.5">
+    <update version="1.0.6">
       <file name="race-harengon.xml" url="https://raw.githubusercontent.com/tobe-nor-tobe/aurora-custom-elements/refs/heads/main/supplements/custom/races/race-harengon.xml"/>
     </update>
   </info>
@@ -140,7 +140,9 @@
     </rules>
   </element>
 
-  <element name="Ability Score Increase (Strength)" type="Racial Trait" source="Custom" id="ID_CUSTOM_RACIAL_TRAIT_HARE_STRENGTH">
+  <!-- Ability Score Increases +2 -->
+  
+  <element name="Ability Score Increase (Strength +2)" type="Racial Trait" source="Custom" id="ID_CUSTOM_RACIAL_TRAIT_HARE_STRENGTH">
     <compendium display="false"/>
     <supports>Harengon2</supports>
     <description>
@@ -151,7 +153,64 @@
     </rules>
   </element>
 
-  <element name="Ability Score Increase (Strength)" type="Racial Trait" source="Custom" id="ID_CUSTOM_RACIAL_TRAIT_HARE_STRENGTH">
+  <element name="Ability Score Increase (Dexterity +2)" type="Racial Trait" source="Custom" id="ID_CUSTOM_RACIAL_TRAIT_HARE_DEXTERITY">
+    <compendium display="false"/>
+    <supports>Harengon2</supports>
+    <description>
+      <p>Your Dexterity score increases by 2.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="2"/>
+    </rules>
+  </element>
+
+  <element name="Ability Score Increase (Constitution +2)" type="Racial Trait" source="Custom" id="ID_CUSTOM_RACIAL_TRAIT_HARE_CONSTITUTION">
+    <compendium display="false"/>
+    <supports>Harengon2</supports>
+    <description>
+      <p>Your Constitution score increases by 2.</p>
+    </description>
+    <rules>
+      <stat name="constitution" value="2"/>
+    </rules>
+  </element>
+
+  <element name="Ability Score Increase (Intlligence +2)" type="Racial Trait" source="Custom" id="ID_CUSTOM_RACIAL_TRAIT_HARE_INTELLIGENCE">
+    <compendium display="false"/>
+    <supports>Harengon2</supports>
+    <description>
+      <p>Your Intlligence score increases by 2.</p>
+    </description>
+    <rules>
+      <stat name="intelligence" value="2"/>
+    </rules>
+  </element>
+
+  <element name="Ability Score Increase (Wisdom +2)" type="Racial Trait" source="Custom" id="ID_CUSTOM_RACIAL_TRAIT_HARE_WISDOM">
+    <compendium display="false"/>
+    <supports>Harengon2</supports>
+    <description>
+      <p>Your Wisdom score increases by 2.</p>
+    </description>
+    <rules>
+      <stat name="wisdom" value="2"/>
+    </rules>
+  </element>
+
+  <element name="Ability Score Increase (Charisma +2)" type="Racial Trait" source="Custom" id="ID_CUSTOM_RACIAL_TRAIT_HARE_CHARISMA">
+    <compendium display="false"/>
+    <supports>Harengon2</supports>
+    <description>
+      <p>Your Charisma score increases by 2.</p>
+    </description>
+    <rules>
+      <stat name="charisma" value="2"/>
+    </rules>
+  </element>
+  
+  <!-- Ability Score Increases +1 -->
+  
+  <element name="Ability Score Increase (Strength +1)" type="Racial Trait" source="Custom" id="ID_CUSTOM_RACIAL_TRAIT_HARE_STRENGTH">
     <compendium display="false"/>
     <supports>Harengon</supports>
     <description>
@@ -162,6 +221,61 @@
     </rules>
   </element>
 
+  <element name="Ability Score Increase (Dexterity +1)" type="Racial Trait" source="Custom" id="ID_CUSTOM_RACIAL_TRAIT_HARE_DEXTERITY">
+    <compendium display="false"/>
+    <supports>Harengon</supports>
+    <description>
+      <p>Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+
+  <element name="Ability Score Increase (Constitution +1)" type="Racial Trait" source="Custom" id="ID_CUSTOM_RACIAL_TRAIT_HARE_CONSTITUTION">
+    <compendium display="false"/>
+    <supports>Harengon</supports>
+    <description>
+      <p>Your Constitution score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="constitution" value="1"/>
+    </rules>
+  </element>
+
+  <element name="Ability Score Increase (Intlligence +1)" type="Racial Trait" source="Custom" id="ID_CUSTOM_RACIAL_TRAIT_HARE_INTELLIGENCE">
+    <compendium display="false"/>
+    <supports>Harengon</supports>
+    <description>
+      <p>Your Intlligence score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="intelligence" value="1"/>
+    </rules>
+  </element>
+
+  <element name="Ability Score Increase (Wisdom +1)" type="Racial Trait" source="Custom" id="ID_CUSTOM_RACIAL_TRAIT_HARE_WISDOM">
+    <compendium display="false"/>
+    <supports>Harengon</supports>
+    <description>
+      <p>Your Wisdom score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="wisdom" value="1"/>
+    </rules>
+  </element>
+
+  <element name="Ability Score Increase (Charisma +1)" type="Racial Trait" source="Custom" id="ID_CUSTOM_RACIAL_TRAIT_HARE_CHARISMA">
+    <compendium display="false"/>
+    <supports>Harengon</supports>
+    <description>
+      <p>Your Charisma score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="charisma" value="1"/>
+    </rules>
+  </element>
+  
   <!-- HARE-TRIGGER -->
 
   <element name="Hare-Trigger" type="Racial Trait" source="Custom" id="ID_CUSTOM_RACIAL_TRAIT_HARE_TRIGGER">
