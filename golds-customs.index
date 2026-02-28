@@ -3,9 +3,9 @@
     <name>Aurora Custom Content</name>
     <author>Your Name</author>
 
-    <update version="1.0.0">
+    <update version="1.0.1">
       <file name="golds-custom.index"
-            url="https://raw.githubusercontent.com/tobe-nor-tobe/aurora-custom-elements/main/golds-customs.index"/>
+            url="https://raw.githubusercontent.com/tobe-nor-tobe/aurora-custom-elements/main/golds-custom.index"/>
     </update>
 
   </info>
