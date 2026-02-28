@@ -3,7 +3,7 @@
     <name>Harengon</name>
     <description>Harengon player race</description>
     <author>Custom</author>
-    <update version="1.0.0">
+    <update version="1.0.1">
       <file name="race-harengon.xml" url="https://raw.githubusercontent.com/tobe-nor-tobe/aurora-custom-elements/refs/heads/main/supplements/custom/races/race-harengon.xml"/>
     </update>
   </info>
@@ -100,22 +100,38 @@
 
   <!-- ABILITY SCORE OPTIONS -->
 
-  <element name="Ability Score Increase (Option A)" type="Racial Trait" source="Custom" id="ID_CUSTOM_HARENGON_ASI_OPTION_A">
+  <!-- Option A: +2 / +1 -->
+
+  <element name="Ability Score Increase (Option A)"
+           type="Racial Trait"
+           source="Custom"
+           id="ID_CUSTOM_HARENGON_ASI_OPTION_A">
+
     <supports>Harengon Ability Score Increase</supports>
+
     <description>
-      <p>Increase one ability score by 2 and increase a different ability score by 1.</p>
+      <p>Increase one ability score by 2 and a different ability score by 1.</p>
     </description>
+
     <rules>
       <select type="Ability Score" name="+2 Ability" number="1" value="2"/>
       <select type="Ability Score" name="+1 Ability" number="1" value="1"/>
     </rules>
   </element>
 
-  <element name="Ability Score Increase (Option B)" type="Racial Trait" source="Custom" id="ID_CUSTOM_HARENGON_ASI_OPTION_B">
+  <!-- Option B: +1 / +1 / +1 -->
+
+  <element name="Ability Score Increase (Option B)"
+           type="Racial Trait"
+           source="Custom"
+           id="ID_CUSTOM_HARENGON_ASI_OPTION_B">
+
     <supports>Harengon Ability Score Increase</supports>
+
     <description>
       <p>Increase three different ability scores by 1.</p>
     </description>
+
     <rules>
       <select type="Ability Score" name="+1 Ability (1)" number="1" value="1"/>
       <select type="Ability Score" name="+1 Ability (2)" number="1" value="1"/>
@@ -130,6 +146,9 @@
     <description>
       <p>You can add your proficiency bonus to your initiative rolls.</p>
     </description>
+    <sheet>
+      <description>You can add your proficiency bonus to your initiative rolls.</description>
+    </sheet>
     <rules>
       <stat name="initiative" value="proficiency"/>
     </rules>
@@ -163,7 +182,7 @@
     </description>
     <sheet usage="{{proficiency}}/Long Rest">
       <description>
-        Jump {{proficiency*5}} feet as a bonus action without provoking opportunity attacks.
+        Jump {{proficiency}*5} feet as a bonus action without provoking opportunity attacks.
       </description>
     </sheet>
   </element>
