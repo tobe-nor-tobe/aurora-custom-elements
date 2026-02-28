@@ -3,7 +3,7 @@
     <name>Aurora Custom Content</name>
     <author>Your Name</author>
 
-    <update version="1.0.5">
+    <update version="1.0.6">
       <file name="golds-custom.index"
             url="https://raw.githubusercontent.com/tobe-nor-tobe/aurora-custom-elements/main/golds-custom.index"/>
     </update>
@@ -13,6 +13,6 @@
   <files>
     <file name="race-harengon.xml"
           url="https://raw.githubusercontent.com/tobe-nor-tobe/aurora-custom-elements/main/supplements/custom/races/race-harengon.xml"
-          version="1.0.2"/>
+          version="1.0.3"/>
   </files>
 </index>
