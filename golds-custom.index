@@ -15,7 +15,7 @@
           url="https://raw.githubusercontent.com/tobe-nor-tobe/aurora-custom-elements/main/supplements/custom/races/race-harengon.xml"
           version="1.1.0"/>
     <file name="extra-attack.xml"
-          url="https://raw.githubusercontent.com/tobe-nor-tobe/aurora-custom-elements/main/supplements/custom/other/extra-feat"
+          url="https://raw.githubusercontent.com/tobe-nor-tobe/aurora-custom-elements/main/supplements/custom/other/extra-feat.xml"
           version="1.0.2"/>
   </files>
 </index>
