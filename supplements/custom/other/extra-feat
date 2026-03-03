@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+  <info>
+    <name>Extra Feat</name>
+    <description>Extra feat</description>
+    <author>Gold</author>
+    <update version="1.0.0">
+      <file name="extra-feat.xml" url=""/>
+    </update>
+  </info>
   <!--Extra Feat -->
   <element name="Additional Feat" type="Option" source="My Homebrew Source"
   id="ID_BREW_OPTION_FEAT">
