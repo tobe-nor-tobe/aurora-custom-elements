@@ -4,12 +4,12 @@
     <name>Extra Feat</name>
     <description>Extra feat</description>
     <author>Gold</author>
-    <update version="1.0.0">
+    <update version="1.0.1">
       <file name="extra-feat.xml" url="https://raw.githubusercontent.com/tobe-nor-tobe/aurora-custom-elements/refs/heads/main/supplements/custom/other/extra-feat"/>
     </update>
   </info>
   <!--Extra Feat -->
-  <element name="Additional Feat" type="Option" source="My Homebrew Source"
+  <element name="Additional Feat" type="Feat" source="My Homebrew Source"
   id="ID_BREW_OPTION_FEAT">
     <description>
       <p>Add an Additional Feat.</p>
