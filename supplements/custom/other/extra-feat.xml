@@ -4,28 +4,27 @@
     <name>Extra Feat</name>
     <description>Grants an additional feat</description>
     <author>Gold</author>
-    <update version="1.0.4">
+    <update version="1.0.5">
       <file name="extra-feat.xml"
             url="https://raw.githubusercontent.com/tobe-nor-tobe/aurora-custom-elements/main/supplements/custom/other/extra-feat.xml"/>
     </update>
   </info>
 
-  <element name="Additional Feat"
-           type="Feat"
-           source="Custom"
-           id="ID_BREW_FEAT_ADDITIONAL_FEAT">
+ <element name="Additional Feat"
+         type="Feat"
+         source="Custom"
+         id="ID_BREW_FEAT_ADDITIONAL_FEAT">
 
-    <supports>General</supports>
+  <description>
+    <p>You gain one additional feat of your choice.</p>
+  </description>
 
-    <description>
-      <p>You gain one additional feat of your choice.</p>
-    </description>
-
-    <rules>
-      <select type="Feat"
-              name="Additional Feat"
-              number="1"/>
-    </rules>
+  <rules>
+    <select type="Feat"
+            name="Additional Feat"
+            number="1"
+            supports="!ID_BREW_FEAT_ADDITIONAL_FEAT"/>
+  </rules>
 
   </element>
 
