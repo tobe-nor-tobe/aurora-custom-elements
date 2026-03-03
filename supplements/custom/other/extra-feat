@@ -2,10 +2,10 @@
 <elements>
   <info>
     <name>Extra Feat</name>
-    <description>Extra feat</description>
+    <description>Grants an additional feat</description>
     <author>Gold</author>
-    <update version="1.0.1">
-      <file name="extra-feat.xml" url="https://raw.githubusercontent.com/tobe-nor-tobe/aurora-custom-elements/refs/heads/main/supplements/custom/other/extra-feat"/>
+    <update version="1.0.2">
+      <file name="extra-feat.xml" url="https://raw.githubusercontent.com/tobe-nor-tobe/aurora-custom-elements/main/supplements/custom/other/extra-feat.xml"/>
     </update>
   </info>
   <!--Extra Feat -->
