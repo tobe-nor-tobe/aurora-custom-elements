@@ -5,7 +5,7 @@
     <description>Extra feat</description>
     <author>Gold</author>
     <update version="1.0.0">
-      <file name="extra-feat.xml" url=""/>
+      <file name="extra-feat.xml" url="https://raw.githubusercontent.com/tobe-nor-tobe/aurora-custom-elements/refs/heads/main/supplements/custom/other/extra-feat"/>
     </update>
   </info>
   <!--Extra Feat -->
