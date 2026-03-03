@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <!--Extra Feat -->
+  <element name="Additional Feat" type="Option" source="My Homebrew Source"
+  id="ID_BREW_OPTION_FEAT">
+    <description>
+      <p>Add an Additional Feat.</p>
+    </description>
+    <sheet>
+      <description>Add an Additional Feat. </description>
+    </sheet>
+    <rules>
+      <select type="Feat" name="Feat (Additional Feat)" level="1" number="1" optional="true"/>
+    </rules>
+  </element>
+</elements>
