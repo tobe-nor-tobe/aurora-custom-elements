@@ -2,10 +2,10 @@
 <elements>
 	<info>
 		<update version="0.0.0">
-			<file name="race-warforged.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/supplements/eberron-rising-from-the-last-war/races/warforged.xml" />
+			<file name="race-warforged.xml" url="https://raw.githubusercontent.com/tobe-nor-tobe/aurora-custom-elements/main/supplements/custom/races/race-warforged.xml" />
 		</update>
 	</info>	
-	<element name="Warforged" type="Race" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_RACE_WARFORGED">
+	<element name="Warforged (Rina Var)" type="Race" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_RACE_WARFORGED">
 		<description>
 			<p>The warforged were built to fight in the Last War. While the first warforged were mindless automatons, House Cannith devoted vast resources to improving these steel soldiers. An unexpected breakthrough produced sapient soldiers, giving rise to what some have only grudgingly accepted as a new species. Warforged are made from wood and metal, but they can feel pain and emotion. Built as weapons, they must now find a purpose beyond war. A warforged can be a steadfast ally, a cold-hearted killer, or a visionary in search of meaning.</p>
 			<h4>LIVING STEEL AND STONE</h4>
@@ -77,6 +77,7 @@
 			<grant type="Racial Trait" id="ID_WOTC_ERLW_RACIAL_TRAIT_WARFORGED_SPECIALIZED_DESIGN" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" />
 			<select type="Language" name="Language, Warforged" supports="Standard||Exotic" />
+			<select type="Feat" name="Bonus Feat" number="1" level="1"/>
 		</rules>
 	</element>
 	<element name="Constructed Resilience" type="Racial Trait" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_RACIAL_TRAIT_WARFORGED_CONSTRUCTED_RESILIENCE">
